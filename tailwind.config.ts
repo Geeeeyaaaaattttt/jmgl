@@ -56,14 +56,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Stormy Port Theme colors
+				// JM Global Logistics custom colors
 				navy: 'hsl(var(--navy))',
 				'steel-gray': 'hsl(var(--steel-gray))',
 				'cool-gray': 'hsl(var(--cool-gray))',
 				teal: 'hsl(var(--teal))',
-				'soft-grey': 'hsl(var(--soft-grey))',
-				'cargo-red': '#ff5a5f',
-				'dark-steel': '#1f2d3d',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

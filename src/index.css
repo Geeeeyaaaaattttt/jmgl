@@ -3,76 +3,75 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Stormy Port Theme for JM Global Logistics */
+/* Definition of the design system with JM Global Logistics theme */
 
 @layer base {
   :root {
-    --background: 31 45 61; /* #1f2d3d - Dark Steel Blue */
-    --foreground: 230 237 243; /* #e6edf3 - Soft Grey */
+    --background: 0 0% 100%;
+    --foreground: 210 30% 12%;
 
-    --card: 31 45 61;
-    --card-foreground: 230 237 243;
+    --card: 0 0% 100%;
+    --card-foreground: 210 30% 12%;
 
-    --popover: 31 45 61;
-    --popover-foreground: 230 237 243;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 30% 12%;
 
-    --primary: 31 45 61;
-    --primary-foreground: 230 237 243;
+    --primary: 212 69% 13%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 174 183 194; /* #aeb7c2 - Cool Gray */
-    --secondary-foreground: 31 45 61;
+    --secondary: 210 19% 56%;
+    --secondary-foreground: 210 30% 12%;
 
-    --muted: 47 58 74;
-    --muted-foreground: 174 183 194;
+    --muted: 213 27% 91%;
+    --muted-foreground: 210 19% 56%;
 
-    --accent: 255 90 95; /* #ff5a5f - Cargo Red */
-    --accent-foreground: 255 255 255;
+    --accent: 178 77% 42%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 255 90 95;
-    --destructive-foreground: 255 255 255;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 47 58 74;
-    --input: 47 58 74;
-    --ring: 255 90 95;
+    --border: 213 27% 91%;
+    --input: 213 27% 91%;
+    --ring: 212 69% 13%;
 
     --radius: 0.5rem;
 
-    /* JM Global Logistics Stormy Port Theme Colors */
-    --navy: 31 45 61; /* #1f2d3d */
-    --steel-gray: 174 183 194; /* #aeb7c2 */
-    --cool-gray: 47 58 74;
-    --teal: 255 90 95; /* #ff5a5f - Cargo Red */
-    --soft-grey: 230 237 243; /* #e6edf3 */
+    /* JM Global Logistics Custom Colors */
+    --navy: 212 69% 13%;
+    --steel-gray: 210 19% 56%;
+    --cool-gray: 213 27% 91%;
+    --teal: 178 77% 42%;
   }
 
   .dark {
-    --background: 31 45 61;
-    --foreground: 230 237 243;
+    --background: 212 69% 13%;
+    --foreground: 0 0% 98%;
 
-    --card: 31 45 61;
-    --card-foreground: 230 237 243;
+    --card: 212 60% 15%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 31 45 61;
-    --popover-foreground: 230 237 243;
+    --popover: 212 60% 15%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 230 237 243;
-    --primary-foreground: 31 45 61;
+    --primary: 0 0% 98%;
+    --primary-foreground: 212 69% 13%;
 
-    --secondary: 174 183 194;
-    --secondary-foreground: 230 237 243;
+    --secondary: 210 19% 56%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 47 58 74;
-    --muted-foreground: 174 183 194;
+    --muted: 212 50% 20%;
+    --muted-foreground: 213 27% 80%;
 
-    --accent: 255 90 95;
-    --accent-foreground: 255 255 255;
+    --accent: 178 77% 42%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 255 90 95;
-    --destructive-foreground: 255 255 255;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 47 58 74;
-    --input: 47 58 74;
-    --ring: 255 90 95;
+    --border: 212 50% 20%;
+    --input: 212 50% 20%;
+    --ring: 178 77% 42%;
   }
 }
 
@@ -86,7 +85,7 @@
   }
 }
 
-/* Enhanced animations for Stormy Port Theme */
+/* Custom animations for JM Global Logistics */
 @keyframes fade-in-up {
   from {
     opacity: 0;
@@ -118,15 +117,6 @@
   }
 }
 
-@keyframes parallax-zoom {
-  0% {
-    transform: scale(1);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
 .animate-fade-in-up {
   animation: fade-in-up 0.6s ease-out;
 }
@@ -137,21 +127,4 @@
 
 .animate-float {
   animation: float 3s ease-in-out infinite;
-}
-
-.animate-parallax-zoom {
-  animation: parallax-zoom 20s ease-in-out infinite alternate;
-}
-
-/* Stormy Port specific utilities */
-.stormy-overlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.stormy-overlay-light {
-  background: rgba(31, 45, 61, 0.7);
-}
-
-.stormy-text-shadow {
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
