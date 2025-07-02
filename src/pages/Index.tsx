@@ -17,7 +17,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1487887235947-a955ef187fcc?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
           }}
         />
         <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
@@ -86,8 +86,8 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Modern logistics warehouse"
+                src="https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Modern logistics warehouse with containers"
                 className="rounded-lg shadow-xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent rounded-lg"></div>
@@ -111,38 +111,53 @@ const Index = () => {
               {
                 icon: Ship,
                 title: "Container Shipping",
-                description: "Full container load (FCL) and less than container load (LCL) services worldwide"
+                description: "Full container load (FCL) and less than container load (LCL) services worldwide",
+                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 icon: Globe,
                 title: "Freight Forwarding",
-                description: "Air, sea, and land freight forwarding with real-time tracking and updates"
+                description: "Air, sea, and land freight forwarding with real-time tracking and updates",
+                image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 icon: Users,
                 title: "Customs Clearance",
-                description: "Expert customs brokerage services to ensure smooth border crossings"
+                description: "Expert customs brokerage services to ensure smooth border crossings",
+                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 icon: Award,
                 title: "Specialized Cargo",
-                description: "Handling of oversized, hazardous, and temperature-controlled shipments"
+                description: "Handling of oversized, hazardous, and temperature-controlled shipments",
+                image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 icon: Ship,
                 title: "Warehousing",
-                description: "Secure storage facilities with inventory management and distribution"
+                description: "Secure storage facilities with inventory management and distribution",
+                image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               },
               {
                 icon: Globe,
                 title: "Supply Chain",
-                description: "End-to-end supply chain optimization and logistics consulting"
+                description: "End-to-end supply chain optimization and logistics consulting",
+                image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
               }
             ].map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                  <service.icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
+                </div>
                 <CardContent className="p-6">
-                  <service.icon className="h-12 w-12 text-teal mb-4 group-hover:scale-110 transition-transform" />
-                  <h3 className="text-xl font-semibold text-navy mb-3">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-teal transition-colors">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
                 </CardContent>
               </Card>
@@ -156,7 +171,7 @@ const Index = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -193,12 +208,16 @@ const Index = () => {
             to help you find the most efficient and cost-effective solution.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-teal hover:bg-teal/90 text-white px-8 py-4 text-lg">
-              Request Quote
-            </Button>
-            <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-4 text-lg">
-              Contact Us
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="bg-teal hover:bg-teal/90 text-white px-8 py-4 text-lg">
+                Request Quote
+              </Button>
+            </Link>
+            <Link to="/contact">
+              <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-4 text-lg">
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
