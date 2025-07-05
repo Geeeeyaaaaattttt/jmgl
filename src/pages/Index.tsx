@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Ship, Globe, Users, Award, ArrowDown, Plane, Truck, Package } from "lucide-react";
@@ -24,7 +23,7 @@ const Index = () => {
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
           <div className="animate-fade-in-up">
             <img
-              src="/lovable-uploads/e899b9ed-3844-40b9-b18a-2c446788d7a9.png"
+              src="/lovable-uploads/d7ab430c-f987-4580-bff1-f4e56afe35d4.png"
               alt="JM Global Logistics Logo"
               className="h-20 w-20 mx-auto mb-6"
             />
@@ -49,7 +48,8 @@ const Index = () => {
               <Link to="/container-specs">
                 <Button 
                   size="lg" 
-                  className="border-2 border-teal text-teal bg-transparent hover:bg-teal hover:text-white px-8 py-4 text-lg transition-all duration-300"
+                  variant="outline" 
+                  className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg transition-all duration-300"
                 >
                   Container Specifications
                 </Button>

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -143,7 +144,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-[#05112F]">Email Us</h3>
-                        <p className="text-gray-600">info@jmgl.co.in</p>
+                        <p className="text-gray-600">info@jmgloballogistics.com</p>
                       </div>
                     </div>
                   </CardContent>
@@ -171,8 +172,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="font-semibold text-[#05112F]">Visit Us</h3>
-                        <p className="text-gray-600">JM Global Logistics</p>
-                        <p className="text-sm text-gray-500">29°26'03.9"N 76°59'18.7"E</p>
+                        <p className="text-gray-600">Global Logistics Hub</p>
                       </div>
                     </div>
                   </CardContent>
@@ -200,8 +200,7 @@ const Contact = () => {
             <div className="text-center text-gray-600">
               <MapPin className="h-12 w-12 mx-auto mb-4" />
               <p className="text-lg">Interactive Map Coming Soon</p>
-              <p className="text-sm">Location: 29°26'03.9"N 76°59'18.7"E</p>
-              <p className="text-xs mt-1">JM Global Logistics</p>
+              <p className="text-sm">Google Maps integration placeholder</p>
             </div>
           </div>
         </div>
