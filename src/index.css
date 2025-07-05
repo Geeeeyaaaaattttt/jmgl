@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 210 30% 12%;
 
-    --primary: 212 69% 13%;
+    --primary: 217 91% 10%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 210 19% 56%;
@@ -33,34 +33,35 @@
 
     --border: 213 27% 91%;
     --input: 213 27% 91%;
-    --ring: 212 69% 13%;
+    --ring: 217 91% 10%;
 
     --radius: 0.5rem;
 
     /* JM Global Logistics Custom Colors */
-    --navy: 212 69% 13%;
+    --navy: 217 91% 10%;
     --steel-gray: 210 19% 56%;
     --cool-gray: 213 27% 91%;
     --teal: 178 77% 42%;
+    --brand-navy: 217 91% 10%;
   }
 
   .dark {
-    --background: 212 69% 13%;
+    --background: 217 91% 10%;
     --foreground: 0 0% 98%;
 
-    --card: 212 60% 15%;
+    --card: 217 80% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 212 60% 15%;
+    --popover: 217 80% 12%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 0 0% 98%;
-    --primary-foreground: 212 69% 13%;
+    --primary-foreground: 217 91% 10%;
 
     --secondary: 210 19% 56%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 212 50% 20%;
+    --muted: 217 70% 15%;
     --muted-foreground: 213 27% 80%;
 
     --accent: 178 77% 42%;
@@ -69,8 +70,8 @@
     --destructive: 0 62% 30%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 212 50% 20%;
-    --input: 212 50% 20%;
+    --border: 217 70% 15%;
+    --input: 217 70% 15%;
     --ring: 178 77% 42%;
   }
 }

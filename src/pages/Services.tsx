@@ -9,19 +9,19 @@ const Services = () => {
       icon: Plane,
       title: "Air & Ocean Freight",
       description: "As an international freight carrier, we specialize in air import and export. We are also flexible and dynamic in our work procedures, keeping us ahead in our field.",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/lovable-uploads/50ff5509-7a4a-4d98-8ca4-88b3c88bfe74.png"
     },
     {
       icon: FileCheck,
       title: "Custom Clearance",
       description: "Customs clearance includes port customs declaration, inspection, tax processing, and legal release — a critical part of international logistics.",
-      image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/lovable-uploads/39626c44-3908-4eae-ba0b-c119d31f555f.png"
     },
     {
       icon: Ship,
       title: "Freight Forwarding",
       description: "We organize and manage shipments for individuals or corporations to ensure timely and cost-effective delivery.",
-      image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "/lovable-uploads/5c7d94bf-c3ff-4eeb-8e2f-8c1e3d31dec8.png"
     }
   ];
 
@@ -36,11 +36,11 @@ const Services = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-navy via-navy/90 to-steel-gray overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#05112F] via-[#05112F]/90 to-steel-gray overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+            backgroundImage: "url('/lovable-uploads/692f9298-1fe1-476e-935a-879332e1f38b.png')"
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -68,11 +68,11 @@ const Services = () => {
                     alt={service.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/60 to-transparent"></div>
                   <service.icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
                 </div>
                 <CardHeader>
-                  <CardTitle className="text-navy group-hover:text-teal transition-colors">
+                  <CardTitle className="text-[#05112F] group-hover:text-teal transition-colors">
                     {service.title}
                   </CardTitle>
                 </CardHeader>
@@ -94,7 +94,7 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-navy mb-8">Our Beliefs</h2>
+              <h2 className="text-4xl font-bold text-[#05112F] mb-8">Our Beliefs</h2>
               <div className="space-y-4">
                 {beliefs.map((belief, index) => (
                   <div key={index} className="flex items-start space-x-3 animate-slide-in-right" style={{animationDelay: `${index * 0.1}s`}}>
@@ -106,22 +106,22 @@ const Services = () => {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Global logistics network"
+                src="/lovable-uploads/ad92db34-e678-4e35-9221-9ebc1204adb8.png"
+                alt="Global logistics network - aerial port view"
                 className="rounded-lg shadow-xl animate-float"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/20 to-transparent rounded-lg"></div>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-navy text-white relative overflow-hidden">
+      <section className="py-20 bg-[#05112F] text-white relative overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-10"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+            backgroundImage: "url('/lovable-uploads/774518d2-c85a-49a1-a6d0-1a5b7723cc90.png')"
           }}
         />
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -135,7 +135,7 @@ const Services = () => {
             <Button size="lg" className="bg-teal hover:bg-teal/90 text-white px-8 py-4 text-lg">
               Get Quote Now
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-navy px-8 py-4 text-lg">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg">
               Contact Our Team
             </Button>
           </div>

@@ -20,15 +20,23 @@ const Index = () => {
             backgroundImage: "url('/lovable-uploads/8c4a26f8-efe4-41e1-8f7e-e8438fd104b7.png')"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy/80 via-navy/60 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#05112F]/80 via-[#05112F]/60 to-transparent"></div>
         <div className="relative z-10 text-center text-white px-4 max-w-5xl mx-auto">
           <div className="animate-fade-in-up">
+            <img
+              src="/lovable-uploads/d7ab430c-f987-4580-bff1-f4e56afe35d4.png"
+              alt="JM Global Logistics Logo"
+              className="h-20 w-20 mx-auto mb-6"
+            />
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
               Global Shipping
               <span className="block text-teal">Made Simple</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl mb-4 text-gray-200 max-w-3xl mx-auto">
               Professional freight forwarding and logistics solutions connecting businesses worldwide with reliable, efficient shipping services across land, sea, and air.
+            </p>
+            <p className="text-lg mb-8 text-teal font-semibold">
+              Commitment to deliver the world
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
@@ -42,7 +50,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-navy px-8 py-4 text-lg"
+                  className="border-white text-white hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg"
                 >
                   Container Specifications
                 </Button>
@@ -61,7 +69,7 @@ const Index = () => {
       <section id="services" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-navy mb-4">Our Transport Solutions</h2>
+            <h2 className="text-4xl font-bold text-[#05112F] mb-4">Our Transport Solutions</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Comprehensive logistics solutions across all transport modes
             </p>
@@ -77,11 +85,11 @@ const Index = () => {
                   alt="UASC Container Ship - Sea Freight Services"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/70 to-transparent"></div>
                 <Ship className="absolute bottom-4 right-4 h-10 w-10 text-white" />
               </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-navy mb-4 group-hover:text-teal transition-colors">Sea Freight</h3>
+                <h3 className="text-2xl font-bold text-[#05112F] mb-4 group-hover:text-teal transition-colors">Sea Freight</h3>
                 <p className="text-gray-600 mb-4">Full container load (FCL) and less than container load (LCL) services with major shipping lines like MSC, UASC, and Maersk.</p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li>• Container shipping worldwide</li>
@@ -99,11 +107,11 @@ const Index = () => {
                   alt="British Airways Aircraft - Air Freight Services"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/70 to-transparent"></div>
                 <Plane className="absolute bottom-4 right-4 h-10 w-10 text-white" />
               </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-navy mb-4 group-hover:text-teal transition-colors">Air Freight</h3>
+                <h3 className="text-2xl font-bold text-[#05112F] mb-4 group-hover:text-teal transition-colors">Air Freight</h3>
                 <p className="text-gray-600 mb-4">Fast and reliable air cargo services with premium airlines for time-sensitive shipments worldwide.</p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li>• Express air cargo</li>
@@ -121,11 +129,11 @@ const Index = () => {
                   alt="Container Trucks at Port - Land Transport Services"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/70 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/70 to-transparent"></div>
                 <Truck className="absolute bottom-4 right-4 h-10 w-10 text-white" />
               </div>
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold text-navy mb-4 group-hover:text-teal transition-colors">Land Transport</h3>
+                <h3 className="text-2xl font-bold text-[#05112F] mb-4 group-hover:text-teal transition-colors">Land Transport</h3>
                 <p className="text-gray-600 mb-4">Comprehensive road and rail transport solutions for domestic and cross-border deliveries.</p>
                 <ul className="text-sm text-gray-500 space-y-2">
                   <li>• Trucking services</li>
@@ -149,13 +157,13 @@ const Index = () => {
                 icon: Globe,
                 title: "Customs Clearance",
                 description: "Expert customs brokerage services for smooth border crossings",
-                image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                image: "/lovable-uploads/39626c44-3908-4eae-ba0b-c119d31f555f.png"
               },
               {
                 icon: Users,
                 title: "Supply Chain Management",
                 description: "End-to-end supply chain optimization and consulting services",
-                image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+                image: "/lovable-uploads/ad92db34-e678-4e35-9221-9ebc1204adb8.png"
               }
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 overflow-hidden">
@@ -166,11 +174,11 @@ const Index = () => {
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/60 to-transparent"></div>
                   <service.icon className="absolute bottom-4 right-4 h-8 w-8 text-white" />
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold text-navy mb-3 group-hover:text-teal transition-colors">{service.title}</h3>
+                  <h3 className="text-xl font-semibold text-[#05112F] mb-3 group-hover:text-teal transition-colors">{service.title}</h3>
                   <p className="text-gray-600">{service.description}</p>
                 </CardContent>
               </Card>
@@ -184,7 +192,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-right">
-              <h2 className="text-4xl font-bold text-navy mb-6">
+              <h2 className="text-4xl font-bold text-[#05112F] mb-6">
                 Your Trusted Global Logistics Partner
               </h2>
               <p className="text-lg text-gray-600 mb-6">
@@ -214,7 +222,7 @@ const Index = () => {
                 alt="Port operations with container cranes at dusk"
                 className="rounded-lg shadow-xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent rounded-lg"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/20 to-transparent rounded-lg"></div>
             </div>
           </div>
         </div>
@@ -228,7 +236,7 @@ const Index = () => {
             backgroundImage: "url('/lovable-uploads/ad92db34-e678-4e35-9221-9ebc1204adb8.png')"
           }}
         />
-        <div className="absolute inset-0 bg-navy/85"></div>
+        <div className="absolute inset-0 bg-[#05112F]/85"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Global Network, Local Expertise</h2>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -255,7 +263,7 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold text-navy mb-6">
+          <h2 className="text-4xl font-bold text-[#05112F] mb-6">
             Ready to Ship Your Cargo?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
@@ -269,7 +277,7 @@ const Index = () => {
               </Button>
             </Link>
             <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-navy text-navy hover:bg-navy hover:text-white px-8 py-4 text-lg">
+              <Button size="lg" variant="outline" className="border-[#05112F] text-[#05112F] hover:bg-[#05112F] hover:text-white px-8 py-4 text-lg">
                 Contact Us
               </Button>
             </Link>

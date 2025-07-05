@@ -31,11 +31,11 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-navy via-navy/90 to-steel-gray overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#05112F] via-[#05112F]/90 to-steel-gray overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80')"
+            backgroundImage: "url('/lovable-uploads/692f9298-1fe1-476e-935a-879332e1f38b.png')"
           }}
         />
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
@@ -59,7 +59,7 @@ const Contact = () => {
             <div className="animate-slide-in-right">
               <Card className="shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-navy">Send us a Message</CardTitle>
+                  <CardTitle className="text-2xl text-[#05112F]">Send us a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -126,7 +126,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div className="animate-fade-in-up">
-                <h2 className="text-3xl font-bold text-navy mb-6">Get in Touch</h2>
+                <h2 className="text-3xl font-bold text-[#05112F] mb-6">Get in Touch</h2>
                 <p className="text-lg text-gray-600 mb-8">
                   Ready to streamline your global logistics? Our team of experts is here to help 
                   you navigate the complexities of international shipping and find the perfect 
@@ -143,7 +143,7 @@ const Contact = () => {
                         <Mail className="h-6 w-6 text-teal" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-navy">Email Us</h3>
+                        <h3 className="font-semibold text-[#05112F]">Email Us</h3>
                         <p className="text-gray-600">info@jmgloballogistics.com</p>
                       </div>
                     </div>
@@ -157,7 +157,7 @@ const Contact = () => {
                         <Phone className="h-6 w-6 text-teal" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-navy">Call Us</h3>
+                        <h3 className="font-semibold text-[#05112F]">Call Us</h3>
                         <p className="text-gray-600">+91-9896318688</p>
                       </div>
                     </div>
@@ -171,7 +171,7 @@ const Contact = () => {
                         <MapPin className="h-6 w-6 text-teal" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-navy">Visit Us</h3>
+                        <h3 className="font-semibold text-[#05112F]">Visit Us</h3>
                         <p className="text-gray-600">Global Logistics Hub</p>
                       </div>
                     </div>
@@ -182,11 +182,11 @@ const Contact = () => {
               {/* Logistics Image */}
               <div className="relative rounded-lg overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="Logistics operations center"
+                  src="/lovable-uploads/39626c44-3908-4eae-ba0b-c119d31f555f.png"
+                  alt="Port operations with container cranes"
                   className="w-full h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/40 to-transparent"></div>
               </div>
             </div>
           </div>

@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Ship } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -23,11 +23,16 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="bg-navy p-2 rounded-lg">
-              <Ship className="h-6 w-6 text-white" />
+          <Link to="/" className="flex items-center space-x-3">
+            <img
+              src="/lovable-uploads/d7ab430c-f987-4580-bff1-f4e56afe35d4.png"
+              alt="JM Global Logistics Logo"
+              className="h-10 w-10"
+            />
+            <div className="flex flex-col">
+              <span className="text-lg font-bold text-[#05112F]">JM Global Logistics</span>
+              <span className="text-xs text-gray-600 hidden sm:block">Commitment to deliver the world</span>
             </div>
-            <span className="text-xl font-bold text-navy">JM Global Logistics</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -36,8 +41,8 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`text-sm font-medium transition-colors hover:text-navy ${
-                  isActive(link.path) ? 'text-navy' : 'text-gray-600'
+                className={`text-sm font-medium transition-colors hover:text-[#05112F] ${
+                  isActive(link.path) ? 'text-[#05112F]' : 'text-gray-600'
                 }`}
               >
                 {link.label}
@@ -70,7 +75,7 @@ const Navbar = () => {
                   to={link.path}
                   onClick={() => setIsMenuOpen(false)}
                   className={`block px-3 py-2 text-base font-medium transition-colors ${
-                    isActive(link.path) ? 'text-navy bg-gray-50' : 'text-gray-600 hover:text-navy'
+                    isActive(link.path) ? 'text-[#05112F] bg-gray-50' : 'text-gray-600 hover:text-[#05112F]'
                   }`}
                 >
                   {link.label}
