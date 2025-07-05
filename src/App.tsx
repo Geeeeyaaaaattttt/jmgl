@@ -9,6 +9,7 @@ import Index from "./pages/Index";
 import ContainerSpecs from "./pages/ContainerSpecs";
 import About from "./pages/About";
 import Services from "./pages/Services";
+import ServiceDetails from "./pages/ServiceDetails";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/service-details" element={<ServiceDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/container-specs" element={<ContainerSpecs />} />
           <Route path="*" element={<NotFound />} />

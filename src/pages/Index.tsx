@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Ship, Globe, Users, Award, ArrowDown, Plane, Truck, Package } from "lucide-react";
@@ -50,7 +49,7 @@ const Index = () => {
                 <Button 
                   size="lg" 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg"
+                  className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg transition-all duration-300"
                 >
                   Container Specifications
                 </Button>
@@ -272,12 +271,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/contact">
-              <Button size="lg" className="bg-teal hover:bg-teal/90 text-white px-8 py-4 text-lg">
-                Request Quote
-              </Button>
-            </Link>
-            <Link to="/contact">
-              <Button size="lg" variant="outline" className="border-[#05112F] text-[#05112F] hover:bg-[#05112F] hover:text-white px-8 py-4 text-lg">
+              <Button size="lg" className="border-[#05112F] text-[#05112F] hover:bg-[#05112F] hover:text-white px-8 py-4 text-lg bg-transparent border-2 transition-all duration-300">
                 Contact Us
               </Button>
             </Link>

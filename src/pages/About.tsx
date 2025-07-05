@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Ship, Users, Award, Target } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -117,9 +118,11 @@ const About = () => {
             <div className="absolute inset-0 bg-navy/40 flex items-center justify-center">
               <div className="text-center text-white">
                 <h3 className="text-3xl font-bold mb-4">Commitment to Deliver The World...</h3>
-                <Button className="bg-teal hover:bg-teal/90 text-white">
-                  Get Started Today
-                </Button>
+                <Link to="/contact">
+                  <Button className="bg-teal hover:bg-teal/90 text-white">
+                    Contact Us
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

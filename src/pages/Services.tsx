@@ -2,6 +2,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Plane, Ship, FileCheck, ArrowRight, CheckCircle } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   const services = [
@@ -78,10 +79,12 @@ const Services = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 mb-4">{service.description}</p>
-                  <Button variant="outline" className="group/btn hover:bg-teal hover:text-white hover:border-teal">
-                    Learn More
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
-                  </Button>
+                  <Link to="/service-details">
+                    <Button variant="outline" className="group/btn hover:bg-teal hover:text-white hover:border-teal">
+                      Learn More
+                      <ArrowRight className="h-4 w-4 ml-2 group-hover/btn:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
                 </CardContent>
               </Card>
             ))}
@@ -132,12 +135,11 @@ const Services = () => {
             Let us handle your shipping needs with our expertise and dedication to excellence.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-teal hover:bg-teal/90 text-white px-8 py-4 text-lg">
-              Get Quote Now
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg">
-              Contact Our Team
-            </Button>
+            <Link to="/contact">
+              <Button size="lg" className="border-white text-white hover:bg-white hover:text-[#05112F] px-8 py-4 text-lg bg-transparent border-2 transition-all duration-300">
+                Contact Our Team
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
