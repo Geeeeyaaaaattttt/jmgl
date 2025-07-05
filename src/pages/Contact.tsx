@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -31,7 +30,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-[#002337] via-[#002337]/90 to-steel-gray overflow-hidden">
+      <section className="relative py-20 bg-gradient-to-br from-[#05112F] via-[#05112F]/90 to-steel-gray overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-20"
           style={{
@@ -59,7 +58,7 @@ const Contact = () => {
             <div className="animate-slide-in-right">
               <Card className="shadow-xl">
                 <CardHeader>
-                  <CardTitle className="text-2xl text-[#002337]">Send us a Message</CardTitle>
+                  <CardTitle className="text-2xl text-[#05112F]">Send us a Message</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -126,7 +125,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="space-y-8">
               <div className="animate-fade-in-up">
-                <h2 className="text-3xl font-bold text-[#002337] mb-6">Get in Touch</h2>
+                <h2 className="text-3xl font-bold text-[#05112F] mb-6">Get in Touch</h2>
                 <p className="text-lg text-gray-600 mb-8">
                   Ready to streamline your global logistics? Our team of experts is here to help 
                   you navigate the complexities of international shipping and find the perfect 
@@ -143,7 +142,7 @@ const Contact = () => {
                         <Mail className="h-6 w-6 text-teal" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-[#002337]">Email Us</h3>
+                        <h3 className="font-semibold text-[#05112F]">Email Us</h3>
                         <p className="text-gray-600">info@jmgl.co.in</p>
                       </div>
                     </div>
@@ -157,7 +156,7 @@ const Contact = () => {
                         <Phone className="h-6 w-6 text-teal" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-[#002337]">Call Us</h3>
+                        <h3 className="font-semibold text-[#05112F]">Call Us</h3>
                         <p className="text-gray-600">+91-9896318688</p>
                       </div>
                     </div>
@@ -171,7 +170,7 @@ const Contact = () => {
                         <MapPin className="h-6 w-6 text-teal" />
                       </div>
                       <div>
-                        <h3 className="font-semibold text-[#002337]">Visit Us</h3>
+                        <h3 className="font-semibold text-[#05112F]">Visit Us</h3>
                         <p className="text-gray-600">JM Global Logistics</p>
                         <p className="text-sm text-gray-500">29°26'03.9"N 76°59'18.7"E</p>
                       </div>
@@ -187,7 +186,7 @@ const Contact = () => {
                   alt="Port operations with container cranes"
                   className="w-full h-64 object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#002337]/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#05112F]/40 to-transparent"></div>
               </div>
             </div>
           </div>
