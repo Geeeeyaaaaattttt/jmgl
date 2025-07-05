@@ -25,9 +25,9 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3">
             <img
-              src="/lovable-uploads/d7ab430c-f987-4580-bff1-f4e56afe35d4.png"
+              src="/lovable-uploads/e899b9ed-3844-40b9-b18a-2c446788d7a9.png"
               alt="JM Global Logistics Logo"
-              className="h-10 w-10"
+              className="h-12 w-auto"
             />
             <div className="flex flex-col">
               <span className="text-lg font-bold text-white">JM Global Logistics</span>
